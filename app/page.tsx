@@ -15,7 +15,7 @@ export default function Home() {
         />
       </div>
 
-      {/* Photo on the left side */}
+      {/* slogan */}
       <div className="absolute left-10 top-1/4 transform -translate-y-1/4 z-5 w-1/2">
         <img
           src="../images/slogan.jpeg"
@@ -24,10 +24,9 @@ export default function Home() {
         />
       </div>
 
-      {/* Main content shifted to the right */}
-      <main className="relative z-10 flex flex-col items-end justify-center min-h-screen p-6 mr-10"> {/* Added mr-10 to move left */}
-        {/* Frosted Glass Effect with Sharpness */}
-        <section className="text-center mb-12 backdrop-blur-md bg-teal/30 border border-white/30 shadow-2xl p-8 rounded-xl max-w-xl"> {/* Changed max-w-md to max-w-xl for larger content */}
+      {/* Main */}
+      <main className="relative z-10 flex flex-col items-end justify-center min-h-screen p-6 mr-10">
+        <section className="text-center mb-12 backdrop-blur-md bg-teal/30 border border-white/30 shadow-2xl p-8 rounded-xl max-w-xl">
           <h1 className="text-4xl font-bold mb-4 text-black">
             Welcome to Your Bucket List!
           </h1>
