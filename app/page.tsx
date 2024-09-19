@@ -18,18 +18,18 @@ export default function Home() {
       {/* Flex Container for Slogan and Main Content */}
       <div className="relative z-10 flex flex-col md:flex-row min-h-screen pt-16">
         {/* Slogan */}
-        <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start p-6">
+        <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start p-6 mt-16 md:mt-0">
           <img
             src="../images/slogan.jpeg"
             alt="Decorative Photo"
-            className="w-full h-auto max-w-md" 
+            className="w-full h-auto max-w-md"  // Adjust max-width for mobile
           />
         </div>
 
         {/* Main Content */}
         <main className="w-full md:w-1/2 flex items-center justify-center md:justify-end p-6">
           <div className="w-full flex flex-col items-center">
-            <section className="text-center mb-8 md:mb-12 mt-6 md:mt-40 backdrop-blur-md bg-teal/30 border border-white/30 shadow-2xl p-6 md:p-8 rounded-xl max-w-xl mx-auto w-full h-[400px] flex flex-col items-center justify-center">
+            <section className="text-center mb-4 md:mb-12 mt-2 md:mt-40 backdrop-blur-md bg-teal/30 border border-white/30 shadow-2xl p-6 md:p-8 rounded-xl max-w-xl mx-auto w-full h-[400px] flex flex-col items-center justify-center">
               <h1 className="text-4xl md:text-6xl mb-4 md:mb-6 anton-extra-bold text-gradient">
                 Create Your Dream Bucket
               </h1>

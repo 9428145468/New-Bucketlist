@@ -55,13 +55,13 @@ body {
 
 .text-gradient {
   background: linear-gradient(90deg, 
-    #FF0078,  /* Start color (vivid pink) */
-    #FF5C8A,  /* Intermediate color */
-    #FF8C00,  /* Intermediate color (dark orange) */
-    #FFD700,  /* Intermediate color (gold) */
-    #F6EFA7,  /* End color (soft yellow) */
-    #FF5C8A,  /* Intermediate color */
-    #FF0078   /* Start color (to create a seamless loop) */
+    #C22ED0,  /* Start color (vibrant purple) */
+    #A64DFF,  /* Intermediate color */
+    #6B6BFF,  /* Intermediate color */
+    #5FFAE0,  /* End color (bright cyan) */
+    #6B6BFF,  /* Intermediate color */
+    #A64DFF,  /* Intermediate color */
+    #C22ED0   /* Start color (to create a seamless loop) */
   );
   background-size: 600% 100%;
   -webkit-background-clip: text;
