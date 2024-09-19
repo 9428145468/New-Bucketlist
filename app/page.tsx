@@ -15,35 +15,41 @@ export default function Home() {
         />
       </div>
 
-      {/* slogan */}
-      <div className="absolute left-10 top-1/4 transform -translate-y-1/4 z-5 w-1/2">
-        <img
-          src="../images/slogan.jpeg"
-          alt="Decorative Photo"
-          className="w-full h-auto" 
-        />
+      {/* Flex Container for Slogan and Main Content */}
+      <div className="relative z-10 flex flex-col md:flex-row min-h-screen pt-16">
+        {/* Slogan */}
+        <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start p-6">
+          <img
+            src="../images/slogan.jpeg"
+            alt="Decorative Photo"
+            className="w-full h-auto max-w-md" 
+          />
+        </div>
+
+        {/* Main Content */}
+        <main className="w-full md:w-1/2 flex items-center justify-center md:justify-end p-6">
+          <div className="w-full flex flex-col items-center">
+            <section className="text-center mb-8 md:mb-12 mt-6 md:mt-40 backdrop-blur-md bg-teal/30 border border-white/30 shadow-2xl p-6 md:p-8 rounded-xl max-w-xl mx-auto w-full h-[400px] flex flex-col items-center justify-center">
+              <h1 className="text-4xl md:text-6xl mb-4 md:mb-6 anton-extra-bold text-gradient">
+                Create Your Dream Bucket
+              </h1>
+              <p className="text-base md:text-md text-gray-600 mb-4 md:mb-10 leading-relaxed anton-extra-bold">
+                Turn your aspirations into reality. Add your wishes, track your
+                progress, and achieve your goals.
+              </p>
+              <button className="px-6 py-3 text-lg md:text-base bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full hover:from-purple-500 hover:to-indigo-500 transition-transform transform hover:scale-105">
+                View My Bucket List
+              </button>
+            </section>
+
+            <section className="w-full max-w-lg p-4 rounded-lg mt-4 md:mt-8 flex justify-center">
+              <button className="w-full py-3 text-black font-semibold bg-teal-100 shadow-2xl rounded-full hover:bg-teal-600 border border-white/30 transition gradient-border-button">
+                Add a New Wish
+              </button>
+            </section>
+          </div>
+        </main>
       </div>
-
-      {/* Main */}
-      <main className="relative z-10 flex flex-col items-end justify-center min-h-screen p-6 mr-10">
-        <section className="text-center mb-12 backdrop-blur-md bg-teal/30 border border-white/30 shadow-2xl p-8 rounded-xl max-w-xl">
-          <h1 className="text-4xl font-bold mb-4 text-black">
-            Welcome to Your Bucket List!
-          </h1>
-          <p className="text-lg text-gray-600 mb-8">
-            Start adding your wishes, track your goals, and make them come true.
-          </p>
-          <button className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
-            View My Bucket List
-          </button>
-        </section>
-
-        <section className="w-full max-w-lg p-4 rounded-lg mt-8">
-          <button className="w-full py-3 text-black font-semibold bg-teal-100 shadow-2xl rounded-full hover:bg-teal-600 border border-white/30 transition gradient-border-button">
-            Add a New Wish
-          </button>
-        </section>
-      </main>
 
       <div className="relative z-10">
         <Footer />

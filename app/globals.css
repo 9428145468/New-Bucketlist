@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,3 +28,43 @@ body {
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Custom CSS class for Anton font */
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anton-extra-bold {
+  font-family: "Anton", sans-serif;
+  font-weight: 900; 
+  font-style: normal;
+}
+
+/* globals.css or your main CSS file */
+@keyframes colorMove {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, 
+    #FF0078,  /* Start color (vivid pink) */
+    #FF5C8A,  /* Intermediate color */
+    #FF8C00,  /* Intermediate color (dark orange) */
+    #FFD700,  /* Intermediate color (gold) */
+    #F6EFA7,  /* End color (soft yellow) */
+    #FF5C8A,  /* Intermediate color */
+    #FF0078   /* Start color (to create a seamless loop) */
+  );
+  background-size: 600% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: colorMove 6s linear infinite;
+}
