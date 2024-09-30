@@ -10,7 +10,7 @@ export default function Navbar() {
 
       <div className="hidden md:flex items-center gap-6 mr-4">
         <a
-          href="/bucketlist"
+          href="/myBucket"
           className="text-black  hover:text-opacity-50 uppercase font-medium transition"
         >
           My Bucket
