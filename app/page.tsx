@@ -38,15 +38,23 @@ export default function Home() {
                 Turn your aspirations into reality. Add your wishes, track your
                 progress, and achieve your goals.
               </p>
-              <a href="/myBucket" className="px-8 py-4 text-lg md:text-base bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full hover:from-purple-500 hover:to-indigo-500 transition-transform transform hover:scale-105">
+              <a
+                href="/myBucket"
+                className="px-8 py-4 text-lg md:text-base bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold rounded-full hover:from-purple-500 hover:to-indigo-500 transition-transform transform hover:scale-105"
+              >
                 View My Bucket List
               </a>
             </section>
 
             {/* Add New Wish Section */}
-            <section className="w-full max-w-lg p-4 rounded-lg mt-2 md:mt-4 flex justify-center">
-              <a href="/newWish" className="w-full py-4 text-white font-semibold bg-[#2B3B85] shadow-2xl rounded-full hover:bg-[#A3AEE1] border border-white/10 transition">
-                Add a New Wish
+            <section className="flex justify-center mt-8 mb-6">
+              <a
+                href="/newWish"
+                className="bg-teal/30 backdrop-blur-md border border-white/30 text-gray-600 shadow-2xl rounded-full px-12 py-4 flex items-center justify-center transition duration-300 ease-in-out hover:bg-white/50"
+              >
+                <span className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#191834] via-[#2d2d91] to-[#61bdaf]">
+                  Add a New Wish
+                </span>
               </a>
             </section>
           </div>
