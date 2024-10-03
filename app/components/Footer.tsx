@@ -21,13 +21,13 @@ export default function Footer() {
         {/* Footer Center: Links */}
         <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 mb-6 md:mb-0">
           <a
-            href="/bucketlist"
+            href="/myBucket"
             className="text-rose-100 hover:text-rose-500 transition text-sm md:text-base"
           >
             My Bucket
           </a>
           <a
-            href="/add"
+            href="/newWish"
             className="text-rose-100 hover:text-rose-500 transition text-sm md:text-base"
           >
             Add Wish
