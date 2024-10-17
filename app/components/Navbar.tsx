@@ -17,18 +17,18 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-6 mr-4">
         <a
           href="/myBucket"
-          className="text-gray-600 uppercase font-normal transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#191834] hover:to-[#61bdaf]">
-          My Bucket
+          className="text-gray-600 font-semibold transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#191834] hover:to-[#61bdaf]">
+          myBucket
         </a>
         <a
           href="/newWish"
-          className="text-gray-600 uppercase font-normal transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#191834] hover:to-[#61bdaf]">
-          Add Wish
+          className="text-gray-600 font-semibold transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#191834] hover:to-[#61bdaf]">
+          addWish
         </a>
         <a
           href="/login"
-          className="text-gray-600 uppercase font-normal transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#191834] hover:to-[#61bdaf]">
-          Login
+          className="text-gray-600 font-semibold transition duration-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-[#191834] hover:to-[#61bdaf]">
+          logIn
         </a>
       </div>
 

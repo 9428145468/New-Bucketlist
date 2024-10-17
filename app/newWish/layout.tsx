@@ -1,17 +1,17 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; 
+
 import localFont from "next/font/local";
 
 // Use the same fonts as in the root layout or define new ones if needed
 const geistSans = localFont({
-  src: "../fonts/GeistVF.woff", 
+  src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 
 const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff", 
+  src: "../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -29,11 +29,7 @@ export default function NewWishLayout({
         <div className="flex flex-col min-h-screen">
           <Navbar />
 
-          <main className="flex-grow">
-            {children}
-          </main>
-
-          <Footer />
+          <main className="flex-grow">{children}</main>
         </div>
       </body>
     </html>
